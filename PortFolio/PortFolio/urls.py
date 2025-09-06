@@ -21,6 +21,7 @@ from django.urls import path
 from core import views as core_views
 
 urlpatterns = [
+    path("", core_views.home, name="home"),
     path("admin/", admin.site.urls),
     path("soumettre-projet/", core_views.submit_project, name="submit_project"),
 ]
