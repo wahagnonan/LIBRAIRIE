@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de SORO Wahagnona Jean</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #0A1931;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 10%;
+      align-items: center;
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #0A1931;
+      font-weight: 600;
+    }
+    .contact-info {
+      font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 10%;
+    }
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .email {
+      color: #FCA311;
+    }
+    .hero-img img {
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    /* SERVICES */
+    .services {
+      padding: 80px 10%;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      gap: 20px;
+      margin: 40px 0;
+    }
+    .card {
+      flex: 1;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    /* EXPERIENCE */
+    .experience {
+      padding: 80px 10%;
+    }
+    .timeline-item {
+      margin-bottom: 30px;
+    }
+    .timeline-item h3 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    /* WORKS */
+    .works {
+      padding: 80px 10%;
+    }
+    .work-gallery {
+      display: flex;
+      gap: 20px;
+    }
+    .work-card {
+      flex: 1;
+      padding: 40px;
+      color: white;
+      border-radius: 15px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .orange { background: #FCA311; }
+    .teal { background: #1D7874; }
+    .green { background: #4CAF50; }
+
+    /* TESTIMONIALS */
+    .testimonials {
+      padding: 80px 10%;
+      background: #f5f5f5;
+      text-align: center;
+    }
+    .testimonial-cards {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .testimonial {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 40px;
+      text-align: center;
+      background: #fff;
+    }
+    .highlight {
+      color: #FCA311;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Jean SORO</div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#works">Projets</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#education">Formation</a></li>
+      </ul>
+      <div class="contact-info">+225 0546742265</div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Bonjour,<br> Je suis Jean SORO</h1>
+      <p class="email">jeansoro303@gmail.com</p>
+      <p class="exp">Développeur Web & Mobile</p>
+      <p class="desc">Je crée des applications web et mobiles modernes. Et j'adore ce que je fais.</p>
+    </div>
+    <div class="hero-img">
+      <img src="111.png" alt="Jean SORO">
+    </div>
+  </section>
+
+  <!-- services-->
+  <section id="services" class="services">
+    <h2>Mes Compétences</h2>
+    <p class="service-desc">
+      Je développe des applications web et mobiles avec les technologies modernes comme Django et Flutter.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h3>Développement Web</h3>
+        <p>Django, HTML, CSS, JavaScript</p>
+      </div>
+      <div class="card">
+        <h3>Développement Mobile</h3>
+        <p>Flutter (Débutant)</p>
+      </div>
+      <div class="card">
+        <h3>Bases de données</h3>
+        <p>SQLite, MySQL, PostgreSQL</p>
+      </div>
+    </div>
+    <div class="stats">
+      <p><strong>5+</strong> Projets Réalisés</p>
+      <p><strong>3+</strong> Technologies Maîtrisées</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="experience">
+    <h2>Mes Expériences & Projets</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Boutique e-commerce (Django, TailwindCSS)</h3>
+        <span>2024</span>
+        <p>Développement d'un site e-commerce avec gestion des produits et interface utilisateur responsive.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Google Summer of Code – Participation</h3>
+        <span>2024</span>
+        <p>Candidature soumise à un projet open source, expérience enrichissante dans la préparation et la présentation technique.</p>
+      </div>
+      
+      
+      <!-- actuellement -->
+      <div class="timeline-item">
+        <h3>Licence sciences informatiques et Gestion </h3>
+        <span>2022-2025</span>
+        <p>Je suis actuellement un cursus en informatique de gestion à l'université peleforo Gon Coulibaly de Korhogo </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="experience">
+    <h2>Ma Formation</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Licence en Sciences Informatiques et Informatique de Gestion</h3>
+        <span>2023 – en cours</span>
+        <p>Université Peleforo Gon Coulibaly, Korhogo</p>
+        <p>Développement d'applications web avec Django, Programmation en C et Python, Analyse et conception de systèmes informatiques.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Baccalauréat Scientifique (Série D)</h3>
+        <span>2015 – 2023</span>
+        <p>Institut de formation professionnelle et général, Korhogo</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works" class="works">
+    <h2>Mes Projets Récents</h2>
+    <div class="work-gallery">
+      <div class="work-card orange">Site E-commerce<br><small>Django, TailwindCSS</small></div>
+      <div class="work-card teal">Application Web<br><small>Django, JavaScript</small></div>
+      <div class="work-card green">Projet Mobile<br><small>Flutter</small></div>
+    </div>
+  </section>
+
+  <!-- LANGUES & INTÉRÊTS -->
+  <section class="testimonials">
+    <h2>Langues & Centres d'intérêt</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial">
+        <h3>Langues</h3>
+        <p>Français : Courant</p>
+        <p>Anglais : Intermédiaire (lecture et compréhension technique)</p>
+      </div>
+      <div class="testimonial">
+        <h3>Compétences Techniques</h3>
+        <p>Python, C, HTML, CSS, JavaScript</p>
+        <p>Django, Bootstrap, TailwindCSS, Flutter</p>
+        <p>Git/GitHub, API REST, Linux, Docker</p>
+      </div>
+      <div class="testimonial">
+        <h3>Centres d'intérêt</h3>
+        <p>Programmation informatique</p>
+        <p>Sport</p>
+        <p>Lecture de livres techniques</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Faisons quelque chose d'extraordinaire ensemble.</p>
+    <p>Commencez par <a href="mailto:jeansoro303@gmail.com" class="highlight">me dire bonjour</a></p>
+    <p>
+      <a href="https://linkedin.com/in/jean-soro" class="highlight">LinkedIn</a> | 
+      <a href="https://github.com/wahagnonan" class="highlight">GitHub</a>
+    </p>
+    <p>©2024. Tous droits réservés</p>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    document.addEventListener("scroll", () => {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        navbar.style.boxShadow = "0 4px 10px rgba(0,0,0,0.1)";
+      } else {
+        navbar.style.boxShadow = "none";
+      }
+    });
+  </script>
+</body>
+</html>
